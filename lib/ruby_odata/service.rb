@@ -570,6 +570,7 @@ class Service
 
   def build_inline_class(klass, entry, property_name)
     # Build the class
+    return if entry.nil?
     inline_klass = entry_to_class(entry)
 
     # Add the property
